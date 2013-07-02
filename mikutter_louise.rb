@@ -3,7 +3,7 @@
 Plugin.create(:mikutter_louise) do
   command(
           :mikutter_louise,
-          name: 'ルイズ',
+          name: 'ルイズ + @jk443 ふぇぇ',
           condition: -> _ { true },
           visible: true,
           role: :timeline
@@ -68,6 +68,8 @@ Plugin.create(:mikutter_louise) do
       t1 = _a[num]['middle']
       t2 = _a[num]['end']
     end
+
+    new_text = new_text[0..128] + ' @jk443 ふぇぇ'
 
     # puts new_text
     Post.primary_service.update(message: new_text)
